@@ -1,0 +1,187 @@
+
+.fw-404 {
+  background:#00a4d3;
+  color: #2e3a52;
+}
+
+.main-404 {
+	font-weight: bold;
+}
+
+.p-t-40 {
+	padding-top: 40px;
+}
+.Out {
+	opacity: 0;
+	transform: scaleY(0);
+}
+.In {
+	opacity: 1;
+	transform: scaleY(1);
+}
+.main {
+	position: relative;
+}
+.desc-404 {
+	position: relative;
+	z-index: 100;
+	border-top:1px dotted #cccccc;
+	margin-top:40px;
+}
+
+.text404 {
+	font-family: roboto;
+    font-weight: bolder;
+	width: auto;
+	margin: 0px auto;
+	cursor: default;
+	animation: fadeIn 0.6s ease-in-out 2s;
+	animation-fill-mode: forwards;
+}
+.text404 > span {
+	display: block;
+	-webkit-backface-visibility: hidden;
+}
+.text404-cut {
+	width: 100%;
+	height: 60px;
+	overflow: hidden;
+	-webkit-transition: all 0.6s ease-in-out;
+	-moz-transition: all 0.6s ease-in-out;
+	-o-transition: all 0.6s ease-in-out;
+	-ms-transition: all 0.6s ease-in-out;
+	transition: all 0.6s ease-in-out;
+}
+
+.text404-cut span {
+	display: block;
+	line-height: 120px;
+	color: rgba(255,255,255,0.9);
+	font-size: 120px;
+	text-transform: uppercase;
+	margin-top: 6px;
+	letter-spacing: -2px;/*
+	font-family: 'Days One', cursive;*/
+	text-shadow: 0px 2px 4px rgba(255,255,255,0.5);
+}
+.text404-cut:last-child span {
+	margin-top: -54px;
+}
+.text404-mid {
+	/*font-family: 'Days One', cursive;*/
+	text-transform: uppercase;
+	font-size: 40px;
+	letter-spacing: 3px;
+	line-height: 40px;
+	text-indent: 20px;
+	position: absolute;
+	top: 50%;
+	margin-top: -20px;
+	width: auto;
+	color: rgba(255,255,255,0.5);
+	opacity: 0;
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	-o-transform: scale(0.3);
+	-ms-transform: scale(0.3);
+	transform: scale(0.3);
+	-webkit-transition: all 0.6s ease-in-out 0s;
+	-moz-transition: all 0.6s ease-in-out 0s;
+	-o-transition: all 0.6s ease-in-out 0s;
+	-ms-transition: all 0.6s ease-in-out 0s;
+	transition: all 0.6s ease-in-out 0s;
+}
+.text404:hover .text404-cut:first-child {
+	-webkit-transform: translateY(-40px);
+	-moz-transform: translateY(-40px);
+	-o-transform: translateY(-40px);
+	-ms-transform: translateY(-40px);
+	transform: translateY(-40px);
+	opacity: 0;
+}
+.text404:hover .text404-cut:last-child {
+	-webkit-transform: translateY(40px);
+	-moz-transform: translateY(40px);
+	-o-transform: translateY(40px);
+	-ms-transform: translateY(40px);
+	transform: translateY(40px);
+	opacity: 0;
+}
+.text404:hover .text404-mid {
+	-webkit-transition-delay: 0.6s;
+	-moz-transition-delay: 0.6s;
+	-o-transition-delay: 0.6s;
+	-ms-transition-delay: 0.6s;
+	transition-delay: 0.6s;
+	opacity: 1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+.desc-404 h4{
+	font-size: 24px;
+	line-height: 34px;
+	color: #fff;
+	padding-bottom: 10px;
+	padding-top: 30px;
+	max-width:600px;
+}
+.desc-404 h4 a {
+	text-decoration: none;
+	color: #fff6a4;
+}
+
+.search-icon-404 {
+    font-size: 25px;
+    position: absolute;
+    right: 11px;
+    top: 8px;
+    color: #666;
+}
+
+/* ------------------------------
+     **Search Box**
+--------------------------------*/
+
+.search-404 {
+	position: relative;
+	height: 40px;
+	margin: 20px 0px;
+	max-width:450px;
+	}
+#search-404 input::-webkit-input-placeholder, 
+#search-404 input:-moz-placeholder, 
+#search-404 input::-moz-placeholder, 
+#search-404 input:-ms-input-placeholder {
+	color: #999;
+}
+#search-404 input[type="text"] {
+	background-color: rgba(255,255,255,0.8);
+	background-position: 97% 9px;
+	background-repeat: no-repeat;
+	border: 0 none;
+	border-radius: 5px;
+	color: #000000;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 9px 45px 9px 15px;
+	transition: all 0.7s ease 0s;
+	width: 100%;
+}
+#search-404 input[type="text"]:focus {
+	background-color: rgba(255,255,255,1);
+}
+.search-submit {
+	background: #fff;
+/* IE needs this */
+	-ms-filter: "progid: dximagetransform.microsoft.alpha(opacity=0)";
+/* IE 8 */
+	filter: alpha(opacity=0);
+/* IE 5-7 */
+	opacity: 0;
+	color: transparent;
+	border: none;
+	outline: none;
+}
